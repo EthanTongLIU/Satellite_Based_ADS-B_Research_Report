@@ -1,0 +1,6 @@
+PWD /home/liutong/文档/Satellite_Based_ADS-B_Research_Report/report/chapter
+INPUT /usr/local/texlive/2018/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-var/web2c/xetex/xelatex.fmt
+INPUT references.tex
+OUTPUT references.log

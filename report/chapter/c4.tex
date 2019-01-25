@@ -1,3 +1,27 @@
 % !TEX root = ../document.tex
 
 \chapter{系统面临的挑战}
+
+\section{覆盖范围}
+
+\begin{enumerate}
+    \item 由于信号相关性差，1090MHz S 模式格式不适用于接收弱信号（<-90dBm）
+    \item 飞机与 LEO 卫星之间的距离约为 800 公里（444 海里）
+    \item 1090ES ADS-B 的“正常”覆盖范围为：50NM A/A，150NM A/G
+\end{enumerate}
+
+\section{调制方案}
+
+脉冲位置调制（PPM）不适合对噪声水平附近的信号进行解码
+
+\section{报文冲突}
+
+\begin{enumerate}
+    \item 由于接收位置高，覆盖范围广
+    \item 加上随机通道访问 $\geq$ ADS-B报告的重叠
+    \item 使用波束天线的补偿措施：空间选择性 + 天线增益
+\end{enumerate}
+
+\section{静锥区}
+
+飞机应答器天线垂直天线的凹陷

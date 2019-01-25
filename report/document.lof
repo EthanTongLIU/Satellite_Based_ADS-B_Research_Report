@@ -1,19 +1,30 @@
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {1.1-1}{\ignorespaces ADS-B 系统工作原理}}{9}{figure.1.1}
-\contentsline {figure}{\numberline {1.4-2}{\ignorespaces 澳洲 5000ft 空域覆盖范围}}{13}{figure.1.2}
-\contentsline {figure}{\numberline {1.4-3}{\ignorespaces 澳洲 10000ft 空域覆盖范围}}{13}{figure.1.3}
-\contentsline {figure}{\numberline {1.4-4}{\ignorespaces 澳洲 20000ft 空域覆盖范围}}{13}{figure.1.4}
-\contentsline {figure}{\numberline {1.4-5}{\ignorespaces 澳洲 30000ft 空域覆盖范围}}{13}{figure.1.5}
-\contentsline {figure}{\numberline {1.4-6}{\ignorespaces 美国陆基 ADS-B 覆盖情况}}{14}{figure.1.6}
-\contentsline {figure}{\numberline {1.4-7}{\ignorespaces 美国不同高度层 ADS-B 覆盖情况}}{14}{figure.1.7}
-\contentsline {figure}{\numberline {1.4-8}{\ignorespaces 全球 ADS-B 覆盖情况}}{15}{figure.1.8}
+\contentsline {figure}{\numberline {1.4-2}{\ignorespaces 全球陆基 ADS-B 覆盖情况}}{13}{figure.1.2}
+\contentsline {figure}{\numberline {1.4-3}{\ignorespaces 澳洲 5000ft 空域覆盖范围}}{13}{figure.1.3}
+\contentsline {figure}{\numberline {1.4-4}{\ignorespaces 澳洲 10000ft 空域覆盖范围}}{13}{figure.1.4}
+\contentsline {figure}{\numberline {1.4-5}{\ignorespaces 澳洲 20000ft 空域覆盖范围}}{14}{figure.1.5}
+\contentsline {figure}{\numberline {1.4-6}{\ignorespaces 澳洲 30000ft 空域覆盖范围}}{14}{figure.1.6}
+\contentsline {figure}{\numberline {1.4-7}{\ignorespaces 美国陆基 ADS-B 覆盖情况}}{14}{figure.1.7}
+\contentsline {figure}{\numberline {1.4-8}{\ignorespaces 美国不同高度层 ADS-B 覆盖情况}}{15}{figure.1.8}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {2.0-1}{\ignorespaces Aireon 天基 ADS-B 系统布局原理}}{17}{figure.2.1}
+\contentsline {figure}{\numberline {2.3-1}{\ignorespaces 星基 ADS-B 系统工作原理}}{19}{figure.2.1}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1-1}{\ignorespaces Aireon 天基 ADS-B 系统布局原理}}{19}{figure.3.1}
-\contentsline {figure}{\numberline {3.1-2}{\ignorespaces 第二代“铱星”卫星}}{20}{figure.3.2}
-\contentsline {figure}{\numberline {3.1-3}{\ignorespaces ADS-B 载荷}}{20}{figure.3.3}
-\contentsline {figure}{\numberline {3.1-4}{\ignorespaces ADS-B 载荷搭载方式}}{20}{figure.3.4}
+\contentsline {figure}{\numberline {3.1-1}{\ignorespaces 单转换超外差接收机}}{22}{figure.3.1}
+\contentsline {figure}{\numberline {3.1-2}{\ignorespaces Proba-V 卫星上搭载的 ADS-B 载荷}}{23}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {载荷原型}}}{23}{figure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {安装位置}}}{23}{figure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {卫星原型}}}{23}{figure.3.2}
+\contentsline {figure}{\numberline {3.1-3}{\ignorespaces 技术验证阶段的单颗卫星}}{23}{figure.3.3}
+\contentsline {figure}{\numberline {3.1-4}{\ignorespaces 未来全球卫星组网方案}}{23}{figure.3.4}
+\contentsline {figure}{\numberline {3.1-5}{\ignorespaces AOS 在世界范围内记录的飞机航迹（2014 年 2 月 11 日）}}{23}{figure.3.5}
+\contentsline {figure}{\numberline {3.1-6}{\ignorespaces 所有接收到的位置信息在天线覆盖区中的分布直方图}}{24}{figure.3.6}
+\contentsline {figure}{\numberline {3.1-7}{\ignorespaces Proba-V 卫星天线辐射图}}{24}{figure.3.7}
+\contentsline {figure}{\numberline {3.1-8}{\ignorespaces 顶部安装的 L 波段天线的垂直天线辐射图}}{24}{figure.3.8}
+\contentsline {figure}{\numberline {3.2-9}{\ignorespaces Aireon 天基 ADS-B 系统布局原理}}{26}{figure.3.9}
+\contentsline {figure}{\numberline {3.2-10}{\ignorespaces 第二代“铱星”卫星}}{26}{figure.3.10}
+\contentsline {figure}{\numberline {3.2-11}{\ignorespaces ADS-B 载荷}}{27}{figure.3.11}
+\contentsline {figure}{\numberline {3.2-12}{\ignorespaces ADS-B 载荷搭载方式}}{27}{figure.3.12}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \contentsfinish 
