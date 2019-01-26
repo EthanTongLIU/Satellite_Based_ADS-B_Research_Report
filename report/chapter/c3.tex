@@ -188,41 +188,160 @@ Proba-V 卫星在实验中也遇到了一些困难，主要包括：
 
 \subsection{系统概述}
 
+Aireon 星基 ADS-B 系统是搭载于第二代铱星（Iridium Next）卫星上的，作为第二代铱星星座系统提供服务的一部分。
 
+\subsubsection{利益攸关方}
+
+Aireon 的星基 ADS-B 系统的利益攸关方如表\ref{tab:stakeholders_of_Aireon_ads-b}所示。
+
+\renewcommand\arraystretch{1.5}
+\begin{table}[htbp]
+\centering
+\caption{Aireon 星基 ADS-B 系统的利益攸关方}
+\label{tab:stakeholders_of_Aireon_ads-b}
+\begin{tabular}[b]{|p{6cm}<{\raggedleft}|p{8cm}<{\raggedright}|}
+\hline
+\textbf{Iridium} & 卫星星座的拥有者和运营方 \\
+\hline
+\textbf{Aireon} & Iridium 和 NAV CANADA 的合资企业，旨在建立 ADS-B 服务 \\
+\hline
+\textbf{TAS(Thales Alenia Space)}& 卫星建造商，与 Iridium 签订合同 \\
+\hline
+\textbf{Harris Corporation} & ADS-B 有效载荷的建造商，与 Aireon 签订合同 \\
+\hline
+\textbf{ITT-Exeils} & 系统工程支持提供商，与 Aireon 签订合同，是处理和分销子系统的建造商 \\
+\hline
+\textbf{NAV CANADA} & Aireon 的投资方，为 ADS-B 服务启动客户 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{背景}
+
+2012 年 11 月，铱星通信公司与 NAV CANADA 合资建立了 Aireon LLC 公司，这家合资企业将允许全球各地的空中交通管理机构持续跟踪世界各地的飞机。有史以来第一次，全球各地的 ANSP（空中导航服务提供商）将能够从极地到极地的追踪飞机，包括海洋空域和偏远地区。这将为航空业带来显著效益，包括大幅节省燃料，减少温室气体排放，提高安全性和效率等。该合资企业将在 FAA、行业和世界主要 ANSP 之间的 PPP（公私合作伙伴关系）下运营。
+
+NAV CANADA 是一家加拿大的 ANSP，是 Aireon 的第一个客户，因为它管理着第二大空中导航服务并且是跨洋服务最大的提供商。
+
+2014 年，Aireon LLC 成为 NAV CANADA、IAA（Irish Avation Authority）、ENAV（Ente Nazionale per l'Assistenza al Volo, Italy)、NAVIAR (Navigation Via Air, Denmark) 和 Iridium 共同的合资企业，用于融资、开发、部署并使用星基 ADS-B 接收器运行全球解决方案，以便在世界任何地方跟踪和监控飞机。\upcite{h2}
+
+\subsubsection{铱星历史}
+
+\begin{enumerate}
+    \item[\textbf{初代铱星}]
+
+    铱星卫星星座（Iridium satellite constellation）是在 20 世纪 90 年代初构想出来的，主要目的是提供全球卫星通讯服务。早期的计算表明需要 77 颗卫星，因此取名为铱星，这是由于这个卫星星座系统的结构类似于化学元素依（原子序数为 77，原子核周围有 77 个电子）。后来的事实证明，只需要 66 颗卫星即可完成对地球的全面覆盖。
+
+    第一代铱星星座由 Iridium SSC（铱星通讯公司的前身） 开发，由摩托罗拉赞助。这些卫星于 1997-2002 年部署。第一代铱星卫星由美国、俄罗斯和中国的运载火箭发射，其中美国的 Delta II 火箭发射其中的 60 颗卫星；俄罗斯的 Proton-K/DM2 火箭发射其中的 21 颗卫星，1 枚 Rokot/Briz-KM 火箭发射其中的 2 颗；中国的“长征 2 号丙改进型”火箭发射其中的 12 颗卫星。
+
+    第一代铱星全球覆盖于 2002 年完成，虽然系统满足其技术要求，但在市场上并不成功。传统地面移动通信几乎完全占领市场，铱星电话无法形成稳定的客户群，摩托罗拉公司未能获得足够的收入来偿还与建造星座相关的债务，而铱星公司则于 2000 年 3 月 17 日宣布破产，这是当时美国历史上最大的破产案。
+
+    在最初的铱星公司宣布破产后，铱星星座系统仍然存在。铱星在2001年接受不足建设投资的 1\% （4800万美元）新注资后起死回生，美国军方是它主要客户，还被用于伊拉克战争，负责美军以及美军与盟军之间的协调行动。2010年，铱星通信与波音公司就卫星网络的维护，运行和支持达成了长期协议，波音运营星座，并为铱星的卫星控制系统（SCS）提供支持\upcite{h4}。
+
+    尽管基于 LM-700A 型号的原始卫星预计设计寿命仅为 8 年，但 2002 - 2017 年没有发射新卫星来补充星座。
+
+    \item[\textbf{第二代铱星}]
+
+    2008 年 8 月，铱星选择了 Lockheed Martin 和 Thales Alenia Space 两家公司参与下一代卫星星座的采购竞标。2010 年 6 月，该合同的获胜者为 Thales Alenia Space。SpaceX 已经签约将会发射所有的 Iridium NEXT 卫星。Iridium NEXT 卫星如图\ref{fig:IMG_Iridium-Satellite_NEXT-Satellite-Vehicle}所示。
+
+    \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=13cm]{pic/IMG_Iridium-Satellite_NEXT-Satellite-Vehicle_HR_FEB16-clip-833x474.png}
+    \caption{第二代铱星卫星}
+    \label{fig:IMG_Iridium-Satellite_NEXT-Satellite-Vehicle}
+    \end{figure}
+
+    \renewcommand\arraystretch{1.5}
+    \begin{table}[htbp]
+    \centering
+    \caption{第二代铱星卫星基本参数}
+    \label{tab:iridium_next_paras}
+    \begin{tabular}[b]{|p{4cm}<{\raggedleft}|p{8cm}<{\raggedright}|}
+    \hline
+    \textbf{帆板展开后翼展} & 9.4m \\
+    \hline
+    \textbf{卫星质量} & 约 860kg\\
+    \hline
+    \textbf{帆板收起时尺寸}& 3.1m x 2.4m x 1.5m \\
+    \hline
+    \textbf{轨道} & 圆极轨道（低地球轨道，LEO），海拔 780km，倾角 86.4$^\circ$，周期 101min（所有卫星总共分布于 6 个轨道上，每条轨道上包含 11 颗卫星）\\
+    \hline
+    \end{tabular}
+    \end{table}
+
+    2017 年 1 月，第二代铱星（Iridium NEXT）卫星开始部署到现有的星座中，Iridium SSC 的继承公司铱星通信公司（Iridium Communications）已经订购了由 Thales Alenia Space 和 Orbital ATK 共建造的共 81 颗新卫星，包括 66 颗在轨卫星，9 颗在轨备用卫星和 6 颗地面备用卫星。
+
+    2017 年 1 月 14 日，第一批共 10 颗 Iridium NEXT 卫星发射成功，标志着该星座部署正式开始。最近的一次发射在 2019 年 1 月 11 日完成，SpaceX 的猎鹰 9 火箭将最后 10 颗卫星送入轨道，将 Iridium NEXT 星座数量增加到 75 颗（66 颗在轨卫星 + 9 颗在轨备用卫星），标志着 Iridium NEXT 星座部署正式完成。
+
+    Iridium NEXT 卫星提供了 L 波段高达 128 kbit/s 的移动终端数据传输速度，高达 1.5 Mbit/s 的航海终端数据传输速度，用于固定/可移动终端的数据传输速度高达 8 Mbit/s。
+
+    Iridium NEXT 为 Aireon 提供了二级载荷，是一个 ADS-B 接收器，并通过 FlightAware 软件由航空公司和空管使用，ADS-B 接收器原型如图\ref{fig:Appstar_with_Base}所示，接收器在卫星上的搭载位置如图\ref{fig:reconfigurable_multimission_payloads}所示。58 颗卫星上的三级载荷是加拿大 exactEarth 公司的海洋 AIS 船舶跟踪接收器。Iridium NEXT 还提供与太空中其他卫星的数据链接。\upcite{h3}
+
+    \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=6.5cm]{pic/Appstar_with_Base_2000x2000.jpg}
+    \caption{Iridium NEXT 上的 ADS-B 接收器}
+    \label{fig:Appstar_with_Base}
+    \end{minipage}
+    \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=6.5cm]{pic/reconfigurable_multimission_payloads_v2_web.jpg}
+    \caption{ADS-B 接收器搭载方式}
+    \label{fig:reconfigurable_multimission_payloads}
+    \end{minipage}
+    \end{figure}
+
+\end{enumerate}
+
+\subsection{体系结构}
+
+Aireon 的星基 ADS-B 系统布局原理如图\ref{fig:Aireon_GlobalSpaceBasedADSB_Coverage_Diagram}所示。
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=15cm]{pic/Aireon_GlobalSpaceBasedADSB_Coverage_Diagram-1024x576.jpg}
+\includegraphics[width=14cm]{pic/Aireon_GlobalSpaceBasedADSB_Coverage_Diagram-1024x576.jpg}
 \caption{Aireon 天基 ADS-B 系统布局原理}
 \label{fig:Aireon_GlobalSpaceBasedADSB_Coverage_Diagram}
 \end{figure}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=13cm]{pic/IMG_Iridium-Satellite_NEXT-Satellite-Vehicle_HR_FEB16-clip-833x474.png}
-\caption{第二代“铱星”卫星}
-\label{fig:IMG_Iridium-Satellite_NEXT-Satellite-Vehicle}
-\end{figure}
+如图\ref{fig:System-Diagram-1024x693}所示，从飞机上广播的 ADS-B 信息将由 Harris 建造的有效载荷（AHP）接收，AHP 将接收到的数据在卫星之间互传，然后下行传至 Aireon 的地面传送网络（TPN）和 Aireon 的处理和分配系统（APD）。在合作伙伴 Harris 的帮助下，APD 对数据进行解码和验证，并将数据传递给购买了 Aireon 服务的客户。
 
 \begin{figure}[htbp]
 \centering
-\begin{minipage}[t]{0.48\textwidth}
-\centering
-\includegraphics[width=6.5cm]{pic/Appstar_with_Base_2000x2000.jpg}
-\caption{ADS-B 载荷}
-\label{fig:Appstar_with_Base}
-\end{minipage}
-\begin{minipage}[t]{0.48\textwidth}
-\centering
-\includegraphics[width=6.5cm]{pic/reconfigurable_multimission_payloads_v2_web.jpg}
-\caption{ADS-B 载荷搭载方式}
-\label{fig:reconfigurable_multimission_payloads}
-\end{minipage}
+\includegraphics[width=13cm]{pic/System-Diagram-1024x693.jpg}
+\caption{Aireon 天基 ADS-B 系统架构}
+\label{fig:System-Diagram-1024x693}
 \end{figure}
-
-\subsection{体系结构}
 
 \subsection{系统性能}
+
+Aireon 的星基 ADS-B 系统，目前只考虑了在卫星上安装 1090ES ADS-B 接收机，没有考虑安装 1090ES ADS-B 发射机。因此，该系统主要用于飞行监视和追踪，没有 TIS/FIS 上传能力\upcite{z1}。它的主要性能如表\ref{tab:aireon_ads-b_performance_para}所示。
+
+\renewcommand\arraystretch{1.5}
+\begin{table}[htbp]
+\centering
+\caption{Aireon 星基 ADS-B 系统的性能}
+\label{tab:aireon_ads-b_performance_para}
+\begin{tabular}[b]{|p{2.2cm}<{\raggedleft}|p{10.5cm}<{\raggedright}|}
+\hline
+\textbf{适用性} & 兼容所有符合 DO-260 标准的 1090ES ADS-B 设备 \\
+\hline
+\textbf{覆盖范围} & 可实现全球范围内不间断的覆盖 \\
+\hline
+\textbf{可用性} & 大于 99.9\% \\
+\hline
+\textbf{容量} & 每个点波束 1000 架飞机 \\
+\hline
+\textbf{时延} & ATC 检测追踪小于 1.5s \\
+\hline
+\textbf{更新速率} & 95\% 的响应速度小于 8s \\
+\hline
+\textbf{部署} & 已经部署完毕，2018 年 9 月提供全球的星基 ADS-B 服务 \\
+\hline
+\end{tabular}
+\end{table}
+
 
 \section{ALAS 系统}
 
