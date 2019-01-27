@@ -12,31 +12,33 @@
 \contentsline {figure}{\numberline {1.4-11}{\ignorespaces 欧洲 2020 年 ADS-B 地面监控系统实施计划\footnotemark }}{18}{figure.1.11}
 \contentsline {figure}{\numberline {1.4-12}{\ignorespaces 欧洲 2020 年之后 ADS-B 地面监控系统实施计划\footnotemark }}{20}{figure.1.12}
 \contentsline {figure}{\numberline {1.4-13}{\ignorespaces 中国 3300m 空域 ADS-B 覆盖情况\footnotemark }}{21}{figure.1.13}
-\contentsline {figure}{\numberline {1.4-14}{\ignorespaces 中国 6600m 空域 ADS-B 覆盖情况\footnotemark }}{22}{figure.1.14}
+\contentsline {figure}{\numberline {1.4-14}{\ignorespaces 中国 6600m 空域 ADS-B 覆盖情况\footnotemark }}{21}{figure.1.14}
 \contentsline {figure}{\numberline {1.4-15}{\ignorespaces 中国 8400m 空域 ADS-B 覆盖情况\footnotemark }}{22}{figure.1.15}
-\contentsline {figure}{\numberline {1.4-16}{\ignorespaces 马来西亚}}{23}{figure.1.16}
-\contentsline {figure}{\numberline {1.4-17}{\ignorespaces 马来西亚航迹}}{23}{figure.1.17}
-\contentsline {figure}{\numberline {1.4-18}{\ignorespaces 泰国}}{24}{figure.1.18}
-\contentsline {figure}{\numberline {1.4-19}{\ignorespaces 菲律宾}}{24}{figure.1.19}
+\contentsline {figure}{\numberline {1.4-16}{\ignorespaces 印度尼西亚 ADS-B 基站布置情况\footnotemark }}{23}{figure.1.16}
+\contentsline {figure}{\numberline {1.4-17}{\ignorespaces 印度尼西亚 ADS-B 覆盖情况模拟\footnotemark }}{23}{figure.1.17}
+\contentsline {figure}{\numberline {1.4-18}{\ignorespaces 马来西亚 ADS-B 覆盖情况\footnotemark }}{24}{figure.1.18}
+\contentsline {figure}{\numberline {1.4-19}{\ignorespaces 马来西亚 ADS-B 基站监测数据\footnotemark }}{24}{figure.1.19}
+\contentsline {figure}{\numberline {1.4-20}{\ignorespaces 泰国 20000 英尺及以上空域 ADS-B 覆盖\footnotemark }}{25}{figure.1.20}
+\contentsline {figure}{\numberline {1.4-21}{\ignorespaces 菲律宾马尼拉 ATM 中心 ADS-B 监控范围\footnotemark }}{26}{figure.1.21}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {2.3-1}{\ignorespaces 星基 ADS-B 系统工作原理}}{27}{figure.2.1}
+\contentsline {figure}{\numberline {2.3-1}{\ignorespaces 星基 ADS-B 系统工作原理}}{29}{figure.2.1}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3.1-1}{\ignorespaces 单转换超外差接收机}}{30}{figure.3.1}
-\contentsline {figure}{\numberline {3.1-2}{\ignorespaces Proba-V 卫星上搭载的 ADS-B 载荷}}{31}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {载荷原型}}}{31}{figure.3.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {安装位置}}}{31}{figure.3.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {卫星原型}}}{31}{figure.3.2}
-\contentsline {figure}{\numberline {3.1-3}{\ignorespaces 技术验证阶段的单颗卫星}}{31}{figure.3.3}
-\contentsline {figure}{\numberline {3.1-4}{\ignorespaces 未来全球卫星组网方案}}{31}{figure.3.4}
-\contentsline {figure}{\numberline {3.1-5}{\ignorespaces AOS 在世界范围内记录的飞机航迹（2014 年 2 月 11 日）}}{31}{figure.3.5}
-\contentsline {figure}{\numberline {3.1-6}{\ignorespaces 所有接收到的位置信息在天线覆盖区中的分布直方图}}{32}{figure.3.6}
-\contentsline {figure}{\numberline {3.1-7}{\ignorespaces Proba-V 卫星天线辐射图}}{32}{figure.3.7}
-\contentsline {figure}{\numberline {3.1-8}{\ignorespaces 顶部安装的 L 波段天线的垂直天线辐射图}}{32}{figure.3.8}
-\contentsline {figure}{\numberline {3.2-9}{\ignorespaces 第二代铱星卫星}}{35}{figure.3.9}
-\contentsline {figure}{\numberline {3.2-10}{\ignorespaces Iridium NEXT 上的 ADS-B 接收器}}{36}{figure.3.10}
-\contentsline {figure}{\numberline {3.2-11}{\ignorespaces ADS-B 接收器搭载方式}}{36}{figure.3.11}
-\contentsline {figure}{\numberline {3.2-12}{\ignorespaces Aireon 天基 ADS-B 系统布局原理}}{37}{figure.3.12}
-\contentsline {figure}{\numberline {3.2-13}{\ignorespaces Aireon 天基 ADS-B 系统架构}}{37}{figure.3.13}
+\contentsline {figure}{\numberline {3.1-1}{\ignorespaces 单转换超外差接收机}}{32}{figure.3.1}
+\contentsline {figure}{\numberline {3.1-2}{\ignorespaces Proba-V 卫星上搭载的 ADS-B 载荷}}{32}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {载荷原型}}}{32}{figure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {安装位置}}}{32}{figure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {卫星原型}}}{32}{figure.3.2}
+\contentsline {figure}{\numberline {3.1-3}{\ignorespaces 技术验证阶段的单颗卫星}}{33}{figure.3.3}
+\contentsline {figure}{\numberline {3.1-4}{\ignorespaces 未来全球卫星组网方案}}{33}{figure.3.4}
+\contentsline {figure}{\numberline {3.1-5}{\ignorespaces AOS 在世界范围内记录的飞机航迹（2014 年 2 月 11 日）}}{33}{figure.3.5}
+\contentsline {figure}{\numberline {3.1-6}{\ignorespaces 所有接收到的位置信息在天线覆盖区中的分布直方图}}{34}{figure.3.6}
+\contentsline {figure}{\numberline {3.1-7}{\ignorespaces Proba-V 卫星天线辐射图}}{34}{figure.3.7}
+\contentsline {figure}{\numberline {3.1-8}{\ignorespaces 顶部安装的 L 波段天线的垂直天线辐射图}}{34}{figure.3.8}
+\contentsline {figure}{\numberline {3.2-9}{\ignorespaces 第二代铱星卫星}}{37}{figure.3.9}
+\contentsline {figure}{\numberline {3.2-10}{\ignorespaces Iridium NEXT 上的 ADS-B 接收器}}{38}{figure.3.10}
+\contentsline {figure}{\numberline {3.2-11}{\ignorespaces ADS-B 接收器搭载方式}}{38}{figure.3.11}
+\contentsline {figure}{\numberline {3.2-12}{\ignorespaces Aireon 天基 ADS-B 系统布局原理}}{39}{figure.3.12}
+\contentsline {figure}{\numberline {3.2-13}{\ignorespaces Aireon 天基 ADS-B 系统架构}}{39}{figure.3.13}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \contentsfinish 
