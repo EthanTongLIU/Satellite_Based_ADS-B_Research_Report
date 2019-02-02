@@ -23,12 +23,22 @@
 \renewcommand\listfigurename{插图目录}
 \renewcommand\listtablename{表格目录}
 \usepackage{float}
+\usepackage{acronym}
+
+\fancypagestyle{acronympage}{
+    \fancyhf{}
+    \fancyhead[EL,OR]{\thepage}
+    \fancyhead[OC]{\nouppercase{\fangsong 缩写目录}}
+    \fancyhead[EC]{\nouppercase{\fangsong 缩写目录}}
+}
 
 \linespread{1.5}
 
 \definecolor{VerbatimColor}{rgb}{0.9,0.9,0.9}
 
 \begin{document}
+
+\pagestyle{main}
 
 \newcommand{\shell}[1]{\noindent\texttt{\$: #1}}
 
@@ -49,6 +59,10 @@
 \clearpage
 \renewcommand{\numberline}[1]{\lotlabel~#1\hspace*{1em}}
 \listoftables
+
+\include{chapter/abbreviation}
+
+\pagestyle{main}
 
 \include{chapter/c1}
 

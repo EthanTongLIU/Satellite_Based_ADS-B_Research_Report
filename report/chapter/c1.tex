@@ -1,42 +1,44 @@
 % !TEX root = ../document.tex
 
-\chapter{ADS-B 系统简介}
+\chapter{\acs{ADS-B} 系统简介}
 
 \section{ADS-B 系统的技术原理}
 
 \subsection{概述}
 
-ADS-B（Automatic Dependent Surveillance-Broadcast，广播式自动相关监视）技术是现代空中交通管理中一项非常重要的监视手段，该项监视技术无需地面设备询问，它以自动广播的方式，按照固定的频率向其它航空器或者地面空中交通管制中心广播飞机的状态信息，这些信息是通过一定的渠道从飞机本身或者卫星设备上获取的，通常这些信息由飞机呼号、位置、高度、速度和航向等信息组成。ADS-B 的信息以报文形式传输，通过空-空、空-地数据链广播式传播。
+ADS-B技术是现代空中交通管理中一项非常重要的监视手段，该项监视技术无需地面设备询问，它以自动广播的方式，按照固定的频率向其它航空器或者地面空中交通管制中心广播飞机的状态信息，这些信息是通过一定的渠道从飞机本身或者卫星设备上获取的，通常这些信息由飞机呼号、位置、高度、速度和航向等信息组成。ADS-B 的信息以报文形式传输，通过空-空、空-地数据链广播式传播。
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=13cm]{pic/Advocacy_ADS_B.jpg}
-\caption{ADS-B 系统工作原理}
+\caption{ADS-B 系统工作原理\protect\footnotemark}
 \label{fig:Advocacy_ADS_B}
 \end{figure}
+
+\footnotetext{图片来源：\url{https://www.aopa.org/advocacy/advocacy-briefs/}}
 
 ADS-B 分为两个部分：ADS-B In 和 ADS-B Out。ADS-B In 是系统的接收部分，负责接收 ADS-B 信息；ADS-B Out 是安装有发射器的面板，负责向其他飞机和地面站发送信号，这将告诉其他飞机和地面站本飞行器的位置、速度和航向等信息。注意 ADS-B Out 设备是始终安装在飞机上的并且需要经过认证，这个设备不可拆卸。这样做的目的是为了防止在未授权的情况下，人为关闭 ADS-B 等其他监视跟踪设备，致使无法追踪飞机位置，导致像马来西亚航空 MH370 航班那样的事故。
 
 \subsection{数据链类型}
 
-为了避免频率过载，ADS-B 可以使用不同的数据链以使用不同的频率收/发数据。目前可以支持 ADS-B 技术的数据链主要有三种，分别是基于 S 模式的 1090ES、978UAT（Universal Access Transceiver，通用访问收发机）数据链和 VDL Mode4（VHFDigital Link，模式 4 甚高频数据链）。这三种数据链技术各有优缺点，当前美国同时使用 1090ES 和 UAT 数据链，欧洲同时使用 1090ES 和 VDL Mode4 数据链，而澳大利亚仅使用 1090ES 数据链。目前只有 S 模式 1090ES 数据链获得国际无线电组织的批准，同时国际民航组织对 1090ES 数据链的支持力度最大，标准也最完善。你可以拥有多种 ADS-B 产品：仅 978 In、978 In\&Out、仅 1090ES Out 等等。
+为了避免频率过载，ADS-B 可以使用不同的数据链以使用不同的频率收/发数据。目前可以支持 ADS-B 技术的数据链主要有三种，分别是基于 S 模式的 \acs{1090ES} 数据链、\acs{978UAT} 数据链和 \acs{VDL Mode4} 数据链。这三种数据链技术各有优缺点，当前美国同时使用 1090ES 和 978UAT 数据链，欧洲同时使用 1090ES 和 VDL Mode4 数据链，而澳大利亚仅使用 1090ES 数据链。目前只有 S 模式 1090ES 数据链获得国际无线电组织的批准，同时国际民航组织对 1090ES 数据链的支持力度最大，标准也最完善。你可以拥有多种 ADS-B 产品：仅 978 In、978 In\&Out、仅 1090ES Out 等等。
 
 \subsubsection{1090ES 数据链}
 
-1090ES 是一个使用扩展震荡信标（Extended Squitter）的改进的 S 模式转发器（使用转发器的 1090MHz 频率），
+1090ES 是一个使用扩展震荡信标的改进的 S 模式转发器（使用转发器的 1090MHz 频率），
 使用高度要超过 18000 英尺。
 
 \subsubsection{978UAT 数据链}
 
-在美国，18000 英尺以下的高度层使用这种数据链，它在 978MHz 上传输，在技术上称为通用访问收发机（UAT）。
+在美国，18000 英尺以下的高度层使用这种数据链，它在 978MHz 上传输，在技术上称为通用访问收发机。
 
 \subsubsection{VDL Mode4 数据链}
 
-模式 4 甚高频数据链是经 ICAO 和 ETSI 标准化的甚高频数据链技术，用于提供移动基站（飞行器和机场地面车辆）、移动单元和固定基站之间的数字通信，它的传输频率在 25 kHz\upcite{h8}。
+模式 4 甚高频数据链是经 \acs{ICAO} 和 \acs{ETSI} 标准化的甚高频数据链技术，用于提供移动基站（飞行器和机场地面车辆）、移动单元和固定基站之间的数字通信，它的传输频率在 25 kHz\upcite{h8}。
 
 \section{ADS-B 系统的应用意义}
 
-当前世界范围内空中交通流量与密度不断增加，在未来的几十年内，随着无人机的普及，有人驾驶飞机和无人机都需要在同一片空域正常且无冲突地运行。下一代空中交通管理系统是处理空中流量爆发式增长和保证数十亿乘客安全的关键所在。ADS-B 是这一关键的核心技术，它的出现，将大幅提升航行监视系统的态势感知能力。当前我国民航空中监视系统的中流砥柱是二次雷达，这种基于传统通信模式的的监视设备一般可以报告飞机的身份识别代码、高度代码、飞机地址等信息，由于消息长度限制，不能提供位置完整性报告。为了保持空中交通的效率，同时保证安全，需要提供更精确的监测系统和消息的完整性，ADS-B 可以克服当前雷达系统的局限性并提高其监视性能，增加空域容量，在无法部署雷达的内陆地区，ADS-B 能为飞机提供优于雷达间隔标准的虚拟雷达管制服务;在有雷达覆盖地区，在不增加雷达设备的情况下，能够以较低代价辅助现有雷达系统。ADS-B 系统并非一个独立的监视系统，它对外部系统的高度依赖，比如 GPS 系统将为其提供位置报告，正因为此，ADS-B 的监视精度可以提高至 10 米量级，监视数据更新速度可达 1 秒 1 次。另外，ADS-B 技术成本较低，其地面站建设成本是传统二次雷达的九分之一。ADS-B 技术将为传统空管监视领域带来重大变革。
+当前世界范围内空中交通流量与密度不断增加，在未来的几十年内，随着无人机的普及，有人驾驶飞机和无人机都需要在同一片空域正常且无冲突地运行。下一代空中交通管理系统是处理空中流量爆发式增长和保证数十亿乘客安全的关键所在。ADS-B 是这一关键的核心技术，它的出现，将大幅提升航行监视系统的态势感知能力。当前我国民航空中监视系统的中流砥柱是二次雷达，这种基于传统通信模式的的监视设备一般可以报告飞机的身份识别代码、高度代码、飞机地址等信息，由于消息长度限制，不能提供位置完整性报告。为了保持空中交通的效率，同时保证安全，需要提供更精确的监测系统和消息的完整性，ADS-B 可以克服当前雷达系统的局限性并提高其监视性能，增加空域容量，在无法部署雷达的内陆地区，ADS-B 能为飞机提供优于雷达间隔标准的虚拟雷达管制服务;在有雷达覆盖地区，在不增加雷达设备的情况下，能够以较低代价辅助现有雷达系统。ADS-B 系统并非一个独立的监视系统，它对外部系统的高度依赖，比如 \acs{GPS} 系统将为其提供位置报告，正因为此，ADS-B 的监视精度可以提高至 10 米量级，监视数据更新速度可达 1 秒 1 次。另外，ADS-B 技术成本较低，其地面站建设成本是传统二次雷达的九分之一。ADS-B 技术将为传统空管监视领域带来重大变革。
 
 \section{ADS-B 系统的发展现状}
 
@@ -51,11 +53,11 @@ ADS-B 分为两个部分：ADS-B In 和 ADS-B Out。ADS-B In 是系统的接收�
 \hline
 \textbf{美国} & 美国联邦航空局已要求在 2020 年 1 月 1 日之后所有飞机需要装备 ADS-B Out，目前大部分空域需要装备 C 模式转发器。有一个重要的例外情况：在墨西哥湾以上的某个空域也需要 ADS-B。目前，只有美国允许将 978UAT 数据链路用于 ADS-B Out。如果计划在美国以外的 ADS-B 空域飞行，则需要使用 S 模式 1090ES 数据链路 \\
 \hline
-\textbf{澳大利亚} & 所有 IFR 飞行都需要 1090ES。2020 年 6 月 6 日之前，配备转发器的外国注册飞机在飞行高度低于 FL290 时免于装备 1090ES \\
+\textbf{澳大利亚} & 所有 \acs{IFR} 飞行都需要 1090ES。2020 年 6 月 6 日之前，配备转发器的外国注册飞机在飞行高度低于 \acs{FL}290 时免于装备 1090ES \\
 \hline
 \textbf{加拿大} & 目前没有要求，但自愿装备 1090ES（特别是在哈德逊湾和附近的海洋空域）的运营商可以获得更高水平的服务。NAV CANADA 是 Aireon 联合空中交通监控机构的一部分，在低地球轨道卫星上安装 ADS-B 设备。NAV CANADA 将在 2018 年提供服务时成为启动客户，并且最初打算将 1090ES ADS-B 纳入北大西洋空域 \\
 \hline
-\textbf{欧洲} & MTOW 超过 12566 磅，或最大巡航空速超过 250 节的 IFR 飞机需要装备 1090ES，对于新生产的飞机要求强制装备，并且必须在 2020 年 6 月 7 日之前对所有飞机进行改装 \\
+\textbf{欧洲} & \acs{MTOW} 超过 12566 磅，或最大巡航空速超过 250 节的 IFR 飞机需要装备 1090ES，对于新生产的飞机要求强制装备，并且必须在 2020 年 6 月 7 日之前对所有飞机进行改装 \\
 \hline
 \textbf{香港} & 所有空域 FL290 及以上需要 1090ES \\
 \hline
@@ -65,7 +67,7 @@ ADS-B 分为两个部分：ADS-B In 和 ADS-B Out。ADS-B In 是系统的接收�
 \hline
 \textbf{新加坡} & 指定的航空公司需要 1090ES \\
 \hline
-\textbf{斯里兰卡} & Colombo 终端控制区（TMA，Colombo Terminal Control Area），FL290 及以上需要需要 1090ES \\
+\textbf{斯里兰卡} & Colombo 的 \acs{TMA}，FL290 及以上需要需要 1090ES \\
 \hline
 \textbf{台湾} & 所有空域 FL290 及以上需要 1090ES \\
 \hline
@@ -82,9 +84,9 @@ ADS-B 分为两个部分：ADS-B In 和 ADS-B Out。ADS-B In 是系统的接收�
 
 \subsubsection{北美地区}
 
-在国外，美国是最先开展 ADS-B 技术研究和应用的国家之一，是美国 NextGen 计划的基础之一，帮助飞行员和空中交通管制员创建一个更安全、更高效的国家空域系统（NAS）。美国的 ADS-B 应用路线是：先通用航空，后商用运输。目前，在通用航空方面，美国已经完全实现使用 ADS-B 技术来为自己的航空器提供监视服务。
+在国外，美国是最先开展 ADS-B 技术研究和应用的国家之一，是美国 NextGen 计划的基础之一，帮助飞行员和空中交通管制员创建一个更安全、更高效的 NAS。美国的 ADS-B 应用路线是：先通用航空，后商用运输。目前，在通用航空方面，美国已经完全实现使用 ADS-B 技术来为自己的航空器提供监视服务。
 
-2016 年 9 月，美国联邦航空局（FAA）开始提供 500 美元奖励，以帮助通用航空运营商支付 ADS-B 设备和安装费用，并鼓励他们现在就装备。
+2016 年 9 月，\acs{FAA} 开始提供 500 美元奖励，以帮助通用航空运营商支付 ADS-B 设备和安装费用，并鼓励他们现在就装备。
 
 FAA 要求在 2020 年之前，所有在受控空域飞行的飞机都必须安装有 ADS-B OUT，而对 ADS-B In 的安装没有强制要求。
 
@@ -92,7 +94,7 @@ FAA 要求在 2020 年之前，所有在受控空域飞行的飞机都必须安�
 
 墨西哥的其他地面站对于空中交通路线提供无缝监控覆盖，使海湾地区的容量从每小时 75 架增加到约 85 架。到 2035 年，这些地面站将为美国-墨西哥领空边界提供更多的海湾航班，从而为运营商节省 7000 万美元。增加容量可减少高峰期的延误，从而节省飞机运营成本和乘客时间。
 
-FAA 正在开发 Interval Management，这是一套借助 ADS-B 的能力对航班进行排队和分配的应用软件。间隔管理的精确间距可以在拥挤的空域内实现更高效的飞行路径，并最大限度地提高空域和机场利用率。这些功能需要新的航空电子设备、地面自动化、决策支持系统和程序。FAA 也在探索 ADS-B 在越来越多的商用太空飞行器发射方面的能力。FAA 也在和运营商和其他的 ANSPs 合作，以评估向海洋空域的管制方提供 ADS-B 数据潜在利益。减少分离标准的替代方法包括使用 ADS-B 或使用增强版本 ADS-C。
+FAA 正在开发 Interval Management，这是一套借助 ADS-B 的能力对航班进行排队和分配的应用软件。间隔管理的精确间距可以在拥挤的空域内实现更高效的飞行路径，并最大限度地提高空域和机场利用率。这些功能需要新的航空电子设备、地面自动化、决策支持系统和程序。FAA 也在探索 ADS-B 在越来越多的商用太空飞行器发射方面的能力。FAA 也在和运营商和其他的 \acs{ANSP} 合作，以评估向海洋空域的管制方提供 ADS-B 数据潜在利益。减少分离标准的替代方法包括使用 ADS-B 或使用增强版本 \acs{ADS-C}。
 
 \subsubsection{澳大利亚}
 
@@ -100,13 +102,13 @@ FAA 正在开发 Interval Management，这是一套借助 ADS-B 的能力对航�
 
 \subsubsection{欧洲}
 
-欧洲各国 ADS-B 应用水平也在大力推进，当前位于欧洲中部的 OpenSky 感知网络的 ADS-B 系统可以捕捉到欧洲大约 30\% 的商业航班，其监视能力相当可观。ADS-B 也是欧洲单一天空计划（SESAR）的基石，欧盟（欧洲共同体和欧控）是 SESAR 的创始人。
+欧洲各国 ADS-B 应用水平也在大力推进，当前位于欧洲中部的 OpenSky 感知网络的 ADS-B 系统可以捕捉到欧洲大约 30\% 的商业航班，其监视能力相当可观。ADS-B 也是 SESAR 的基石，欧盟（欧洲共同体和欧控）是 SESAR 的创始人。
 
-欧洲 ADS-B 实施计划要求从 2015 年起，质量大于 5700kg 或速度超过 250 节的新飞行器当在以仪表飞行规则（IFR）下飞行时要装备 ADS-B Out，已经运营的飞机从 2017 年底开始进行改装，在 2020 年 ADS-B 监视系统需要开始运作\upcite{h2}。
+欧洲 ADS-B 实施计划要求从 2015 年起，质量大于 5700kg 或速度超过 250 节的新飞行器当在以 IFR 下飞行时要装备 ADS-B Out，已经运营的飞机从 2017 年底开始进行改装，在 2020 年 ADS-B 监视系统需要开始运作\upcite{h2}。
 
 \subsection{国内应用现状}
 
-在 ADS-B 技术的研发应用方面，中国民航紧跟国际发展动态，努力与世界接轨。当今 ADS-B 监视技术已在中国民航处于实用阶段，截至 2014 年底，中国民航全行业运输飞机注册架数已达 2370 架，部分已完成 1090ES（1090Mhz Extended Squitter，1090 兆赫扩展断续脉冲）ADS-B OUT 机载设备加改装。中国民航在西部高原地区实施了 B213 航路（成都-拉萨）ADS-B 试验工程和试验运行，并缩小了航路间隔；在 B330 成都-九寨航路、南中国海开展了 ADS-B 试验验证工作。2015 年，中国民用航空 ADS-B 实施规划颁布，是指导中国民航 ADS-B 实施的纲领性文件。
+在 ADS-B 技术的研发应用方面，中国民航紧跟国际发展动态，努力与世界接轨。当今 ADS-B 监视技术已在中国民航处于实用阶段，截至 2014 年底，中国民航全行业运输飞机注册架数已达 2370 架，部分已完成 1090ES ADS-B OUT 机载设备加改装。中国民航在西部高原地区实施了 B213 航路（成都-拉萨）ADS-B 试验工程和试验运行，并缩小了航路间隔；在 B330 成都-九寨航路、南中国海开展了 ADS-B 试验验证工作。2015 年，中国民用航空 ADS-B 实施规划颁布，是指导中国民航 ADS-B 实施的纲领性文件。
 
 \subsection{技术发展现状}
 
@@ -132,9 +134,9 @@ FAA 正在开发 Interval Management，这是一套借助 ADS-B 的能力对航�
 
 \subsection{澳大利亚}
 
-ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径为直线，不能沿曲线或者跨障碍物行进}设施，地面站接收下行 ADS-B 数据的能力取决于飞机的高度、飞机与地面站的距离以及障碍物。在海拔较低的低空区域（接近地面），覆盖范围在距离地面站 20 海里半径内，高空空域覆盖半径可以超过 250 海里。
+ADS-B 地面站是 LOS \footnote{通常指波的传播路径为直线，不能沿曲线或者跨障碍物行进}设施，地面站接收下行 ADS-B 数据的能力取决于飞机的高度、飞机与地面站的距离以及障碍物。在海拔较低的低空区域（接近地面），覆盖范围在距离地面站 20 海里半径内，高空空域覆盖半径可以超过 250 海里。
 
-在雷达覆盖范围与 ADS-B 覆盖范围重叠的空域，雷达探测到的飞机位置将会提交给 ATC。
+在雷达覆盖范围与 ADS-B 覆盖范围重叠的空域，雷达探测到的飞机位置将会提交给 \acs{ATC}。
 
 截至 2017 年 1 月，澳大利亚纯 ADS-B 覆盖区域如图\ref{fig:ADS-B-5000}、\ref{fig:ADS-B-10k}、\ref{fig:ADS-B-20k}、\ref{fig:ADS-B-30k}所示，澳大利亚 30000 英尺以上高空已实现 ADS-B 密集覆盖，航路管制间隔已缩至 5 海里水平。
 
@@ -144,13 +146,13 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 \centering
 \includegraphics[width=7.5cm]{pic/ADS-B-5000.jpg}
 \caption{澳洲 5000ft 空域覆盖范围\protect\footnotemark}
-\label{fig:ADS-B-5000}
+\label{fig:ADS-B-5000}\footnotetext{图片来源：\url{http://www.airservicesaustralia.com/projects/ads-b/ads-b-coverage/}}
 \end{minipage}
 \begin{minipage}[t]{0.48\textwidth}
 \centering
 \includegraphics[width=7.5cm]{pic/ADS-B-10k.jpg}
-\caption{澳洲 10000ft 空域覆盖范围}
-\label{fig:ADS-B-10k}
+\caption{澳洲 10000ft 空域覆盖范围\protect\footnotemark}
+\label{fig:ADS-B-10k}\footnotetext{图片来源：\url{http://www.airservicesaustralia.com/projects/ads-b/ads-b-coverage/}}
 \end{minipage}
 \end{figure}
 
@@ -159,18 +161,16 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 \begin{minipage}[t]{0.48\textwidth}
 \centering
 \includegraphics[width=7.5cm]{pic/ADS-B-20k.jpg}
-\caption{澳洲 20000ft 空域覆盖范围}
-\label{fig:ADS-B-20k}
+\caption{澳洲 20000ft 空域覆盖范围\protect\footnotemark}
+\label{fig:ADS-B-20k}\footnotetext{图片来源：\url{http://www.airservicesaustralia.com/projects/ads-b/ads-b-coverage/}}
 \end{minipage}
 \begin{minipage}[t]{0.48\textwidth}
 \centering
 \includegraphics[width=7.5cm]{pic/ADS-B-30k.jpg}
-\caption{澳洲 30000ft 空域覆盖范围}
-\label{fig:ADS-B-30k}
+\caption{澳洲 30000ft 空域覆盖范围\protect\footnotemark}
+\label{fig:ADS-B-30k}\footnotetext{图片来源：\url{http://www.airservicesaustralia.com/projects/ads-b/ads-b-coverage/}}
 \end{minipage}
 \end{figure}
-
-\footnotetext{图片来源：\url{http://www.airservicesaustralia.com/projects/ads-b/ads-b-coverage/}}
 
 \subsection{北美地区}
 
@@ -208,7 +208,7 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
     2018 年 5 月 15 日的 SESAR 关于欧洲 ADS-B 系统建设的阶段性报告展示了欧洲 ADS-B 系统的相关情况\upcite{e5}。
 
-    图\ref{fig:20180515-sesar-ads-b-report_18}显示了欧洲 ADS-B 监控系统的实施现状、相关覆盖范围，以及 ATM 系统中相关监控数据的集成水平。
+    图\ref{fig:20180515-sesar-ads-b-report_18}显示了欧洲 ADS-B 监控系统的实施现状、相关覆盖范围，以及 \acs{ATM} 系统中相关监控数据的集成水平。
 
     \begin{figure}[!htb]
     \centering
@@ -226,7 +226,7 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
         \item \textbf{机场 ADS-B 监视}
 
-        用于机场监控的 ADS-B 系统非常广泛，目前，欧洲共安装了 34 个机场 ADS-B 站：其中 23 个被集成到 ATM 系统中，11 个没有被集成到 ATM 系统中，但计划将它们与 MLAT 系统集成。机场 ADS-B 在与 ATM 系统集成时，无论是否与 MLAT 结合，都只用于地面车辆的识别和定位数据，因为数据质量要求没有飞机那么严格。现有 ADS-B 站的剩余平均寿命为 8 年。
+        用于机场监控的 ADS-B 系统非常广泛，目前，欧洲共安装了 34 个机场 ADS-B 站：其中 23 个被集成到 ATM 系统中，11 个没有被集成到 ATM 系统中，但计划将它们与 \acs{MLAT} 系统集成。机场 ADS-B 在与 ATM 系统集成时，无论是否与 MLAT 结合，都只用于地面车辆的识别和定位数据，因为数据质量要求没有飞机那么严格。现有 ADS-B 站的剩余平均寿命为 8 年。
     \end{itemize}
 
     \item \textbf{空中段 ADS-B（机上终端）}
@@ -246,7 +246,7 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
     关于星基 ADS-B 信息的地面使用情况，28 家 ANSP 在回答问卷时表示，15 家 ANSP 没有使用星基 ADS-B 数据的计划，而 13 家 ANSP 表示，一旦服务可用，他们正在考虑使用该数据。
 
-    NATS 和 NAV CANADA 计划在 2019-2020 年期间在北大西洋和加拿大部署星基 ADS-B (Aireon)。一些欧洲的 ANSP 计划从 2019 年第一季度开始使用它。
+    \acs{NATS} 和 NAV CANADA 计划在 2019-2020 年期间在北大西洋和加拿大部署星基 ADS-B (Aireon)。一些欧洲的 ANSP 计划从 2019 年第一季度开始使用它。
 
 \end{itemize}
 
@@ -270,7 +270,7 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
     \begin{itemize}
         \item \textbf{空域 ADS-B 监视}
 
-        未来欧洲 ADS-B 接收机的安装情况显示，采用 ADS-B 的趋势越来越明显。在 ANSP 的投资计划中，总共有 60 多个具备 ADS-B 能力的航路监测站。值得强调的是，由 WAM 或 ADS-B 基站顶部的 S 模式雷达将提供大量计划中的 ADS-B 功能。
+        未来欧洲 ADS-B 接收机的安装情况显示，采用 ADS-B 的趋势越来越明显。在 ANSP 的投资计划中，总共有 60 多个具备 ADS-B 能力的航路监测站。值得强调的是，由 \acs{WAM} 或 ADS-B 基站顶部的 S 模式雷达将提供大量计划中的 ADS-B 功能。
 
         ADS-B 基站的典型寿命为 15-18 年。
 
@@ -303,7 +303,7 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
         \item \textbf{机场 ADS-B 监视}
 
-        为配合上述情况，机场服务供应商及机场运营商计划于 2021 年至 2030 年期间安装/更新 6 个 ADS-B 监测站，进行机场监察。这些监测站将补充和/或取代现有的基础设施，并将扩大 ADS-B 在欧洲的覆盖范围。从2018年起，现有ADS-B站的剩余平均寿命为16年。
+        为配合上述情况，机场服务供应商及机场运营商计划于 2021 年至 2030 年期间安装/更新 6 个 ADS-B 监测站，进行机场监察。这些监测站将补充和/或取代现有的基础设施，并将扩大 ADS-B 在欧洲的覆盖范围。从2018年起，现有 ADS-B 站的剩余平均寿命为 16 年。
     \end{itemize}
 
     \item \textbf{空中段 ADS-B（机上终端）}
@@ -314,13 +314,13 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
     \item \textbf{星基 ADS-B}
 
-    一些 ANSP 正在考虑基于 ADS-B 的空间服务，并且正在进行调查（基于 Aireon 的服务可用性）。三家 ANSP 正计划使用基于空间的 ADS-B。在意大利，星基 ADS-B 系统将集成在 ATS 测试平台上，预计 2020 年后的业务用途将作为地面独立的 ATS 监视层，用于应急和增强监视。中期而言，这可能是传统监控基础设施全球优化的一部分。
+    一些 ANSP 正在考虑基于 ADS-B 的空间服务，并且正在进行调查（基于 Aireon 的服务可用性）。三家 ANSP 正计划使用基于空间的 ADS-B。在意大利，星基 ADS-B 系统将集成在 \acs{ATS} 测试平台上，预计 2020 年后的业务用途将作为地面独立的 ATS 监视层，用于应急和增强监视。中期而言，这可能是传统监控基础设施全球优化的一部分。
 
 \end{itemize}
 
 \subsection{中国}
 
-根据 ICAO 第十五次 ADS-B 研究和实施研讨会（ADS-B SIFT/15）议信息论文（IP，Information Paper）IP/31 \upcite{e6}显示，CAAC 于 2015 年 12 月修订了《中国民用航空 ADS-B 实施方案》。根据国家 ADS-B 建设项目审批及实施进度，主要修改是调整各阶段的实现时间。
+根据 ICAO 第十五次 ADS-B 研究和实施研讨会（ADS-B SIFT/15）议信息论文（IP，Information Paper）IP/31 \upcite{e6}显示，\acs{CAAC} 于 2015 年 12 月修订了《中国民用航空 ADS-B 实施方案》。根据国家 ADS-B 建设项目审批及实施进度，主要修改是调整各阶段的实现时间。
 
 \begin{itemize}
     \item \textbf{第一阶段}：2017 年底，ADS-B 在中国开始初步运营，以及在 ATS 路线上实施 ADS-B ：B213、B345、B215、A460、H66、L888、H15、Z1、B206、A368、M771、L642、N892 和 A1。
@@ -359,11 +359,11 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
 \footnotetext{图片来源：参考文献\cite{e6}}
 
-在中国南海，为满足 L642 路和 M771 路 ADS-B 监控控制需求，提升三亚 FIR 的 ADS-B 监控能力，CAAC 在 FIR 内增设了 4 个 ADS-B 站。截至 2016 年 4 月 19 日文档发布期间，已有 4 个 ADS-B 站和 1 个 ADS-B 数据处理站完成了安装调试和现场验收测试，空中交通管制自动化系统已完成软件升级测试，即将投入运作，这一地区的监测范围将大大改善。
+在中国南海，为满足 L642 路和 M771 路 ADS-B 监控控制需求，提升三亚 \acs{FIR} 的 ADS-B 监控能力，CAAC 在 FIR 内增设了 4 个 ADS-B 站。截至 2016 年 4 月 19 日文档发布期间，已有 4 个 ADS-B 站和 1 个 ADS-B 数据处理站完成了安装调试和现场验收测试，空中交通管制自动化系统已完成软件升级测试，即将投入运作，这一地区的监测范围将大大改善。
 
 中方愿将 ADS-B 数据处理中心的 ADS-B 数据与周边国家/行政部门共享。
 
-根据 ICAO 第十四次东南亚和孟加拉湾区域 ADS-B 实施工作组会议（SEA/BOB ADS-B WG/14）信息论文（IP，Information Paper）IP/3\upcite{e7}显示，自 2016 年起，中国一直在规划国家 ADS-B 项目，该项目由 308 个地面站和 3 级网络架构组成，用于处理和分发 ADS-B 数据。根据项目方案，所有的安装部署活动已经完成，所有的现场验收测试（SAT）和飞行检查将于 2018 年底完成。ADS-B 服务的初步运营将于 2019 年初准备就绪。2019 年 7 月 1 日，ADS-B 在全国空域试运行。
+根据 ICAO 第十四次东南亚和孟加拉湾区域 ADS-B 实施工作组会议（SEA/BOB ADS-B WG/14）信息论文（IP，Information Paper）IP/3\upcite{e7}显示，自 2016 年起，中国一直在规划国家 ADS-B 项目，该项目由 308 个地面站和 3 级网络架构组成，用于处理和分发 ADS-B 数据。根据项目方案，所有的安装部署活动已经完成，所有的现场验收测试和飞行检查将于 2018 年底完成。ADS-B 服务的初步运营将于 2019 年初准备就绪。2019 年 7 月 1 日，ADS-B 在全国空域试运行。
 
 \subsection{东南亚}
 
@@ -412,17 +412,17 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 \centering
 \includegraphics[width=7.5cm]{pic/Malaysia.pdf}
 \caption{马来西亚 ADS-B 基站监测数据\protect\footnotemark}
-\label{fig:Malaysia}
+\label{fig:Malaysia}\footnotetext{图片来源：参考文献\cite{e9}}
 \end{minipage}
 \end{figure}
 
-\footnotetext{图片来源：参考文献\cite{e9}}
+
 
 \subsubsection{泰国}
 
-根据 ICAO 第十二次东南亚和孟加拉湾区域 ADS-B 实施工作组会议（SEA/BOB ADS-B WG/12）信息论文（IP，Information Paper）IP/09\upcite{e10}显示，2006年，泰国航空无线电有限公司（AEROTHAI）在其位于曼谷的总部安装了首个 ADS-B 地面站，可以 ASTERIX CAT 21 0.26 版本的格式输出信息，以供研发之用。2014 年，在清迈、Ubon Ratchathani、Udon Thani、Hat Yai、Samui 市等地增设了 5 个 ADS-B 地面站，并取得了良好的实验效果。这些地面站能够支持 ASTERIX CAT 21 1.4 版和 2.1 版格式。同样在 2014 年，在曼谷安装的第一个地面站升级为支持 ASTERIX CAT 21 1.4 版和 2.1 版格式。此外，所有 ADS-B 地面站均符合 ED-129 标准。
+根据 ICAO 第十二次东南亚和孟加拉湾区域 ADS-B 实施工作组会议（SEA/BOB ADS-B WG/12）信息论文（IP，Information Paper）IP/09\upcite{e10}显示，2006年，AEROTHAI 在其位于曼谷的总部安装了首个 ADS-B 地面站，可以 ASTERIX CAT 21 0.26 版本的格式输出信息，以供研发之用。2014 年，在清迈、Ubon Ratchathani、Udon Thani、Hat Yai、Samui 市等地增设了 5 个 ADS-B 地面站，并取得了良好的实验效果。这些地面站能够支持 ASTERIX CAT 21 1.4 版和 2.1 版格式。同样在 2014 年，在曼谷安装的第一个地面站升级为支持 ASTERIX CAT 21 1.4 版和 2.1 版格式。此外，所有 ADS-B 地面站均符合 ED-129 标准。
 
-每个 ADS-B 地面站提供的覆盖范围在半径 250 海里和海拔 4.5 万英尺以内。目前泰国各地共设置了 6 个 ADS-B 地面站，20000 英尺及以上空域基本覆盖如图\ref{fig:thailand}所示，可为 Bangkok FIR 公司 20000 英尺及以上航路运行提供 ADS-B 监控服务。目前，上述 ADS-B 地面系统正在通过泰国民航管理局（CAAT）的认证，预计于 2017 年完成（文献于 2016 年发布）。
+每个 ADS-B 地面站提供的覆盖范围在半径 250 海里和海拔 4.5 万英尺以内。目前泰国各地共设置了 6 个 ADS-B 地面站，20000 英尺及以上空域基本覆盖如图\ref{fig:thailand}所示，可为曼谷 FIR 20000 英尺及以上航路运行提供 ADS-B 监控服务。目前，上述 ADS-B 地面系统正在通过 \acs{CAAT} 的认证，预计于 2017 年完成（文献于 2016 年发布）。
 
 \begin{figure}[!htb]
 \centering
@@ -437,7 +437,7 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
 \subsubsection{菲律宾}
 
-根据 ICAO 第十三次东南亚和孟加拉湾区域 ADS-B 实施工作组会议（SEA/BOB ADS-B WG/13）信息论文（IP，Information Paper）IP/17\upcite{e11}显示，在菲律宾的 CNS / ATM 系统开发项目，截至 2017 年 10 月 16 日，已经完成 99.9\%， 包括安装新的监视系统，新监视系统包括 10 部雷达（5 部航路雷达和 5 终端区雷达），1 个 ADS-B 地面站和 3 台现有雷达系统的升级，这将覆盖菲律宾 80\% 的空域。海洋部分将被 ADS-C 覆盖。
+根据 ICAO 第十三次东南亚和孟加拉湾区域 ADS-B 实施工作组会议（SEA/BOB ADS-B WG/13）信息论文（IP，Information Paper）IP/17\upcite{e11}显示，在菲律宾的 \acs{CNS}/ATM 系统开发项目，截至 2017 年 10 月 16 日，已经完成 99.9\%， 包括安装新的监视系统，新监视系统包括 10 部雷达（5 部航路雷达和 5 终端区雷达），1 个 ADS-B 地面站和 3 台现有雷达系统的升级，这将覆盖菲律宾 80\% 的空域。海洋部分将被 ADS-C 覆盖。
 
 菲律宾完成了位于马尼拉 ATM 中心的 1 个 ADS-B 地面站的安装。地面站符合 DO260B 标准。考虑到新的 CNS/ATM 系统仍处于过渡阶段，最初提出的 2017 年地面站(Kalayaan、Zambales 和 Pangasinan)将在 2018-2019 年底实施。另外 3 个场址(Jomalig 岛、General Santos 机场和 Ilocos Norte)计划在今后几年安装。有关 ADS-B 要求的相关规定已经在讨论中。
 
@@ -454,6 +454,6 @@ ADS-B 地面站是视距（line-of-sight）\footnote{通常指波的传播路径
 
 \footnotetext{图片来源：参考文献\cite{e11}}
 
-2015 年 10 月，菲律宾与新加坡签署 ADS-B 合作协议，在菲律宾巴塔拉扎为新加坡提供 ADS-B 数据和甚高频无线电设施。这部分覆盖了 ATS 航路 N884 和 M767 上的监视和 DCPC 漏洞。
+2015 年 10 月，菲律宾与新加坡签署 ADS-B 合作协议，在菲律宾巴塔拉扎为新加坡提供 ADS-B 数据和甚高频无线电设施。这部分覆盖了 ATS 航路 N884 和 M767 上的监视和 \acs{DCPC} 漏洞。
 
 

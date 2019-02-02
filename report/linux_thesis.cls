@@ -44,10 +44,12 @@
 
 %设置页眉页脚
 \pagestyle{fancy}
+\fancypagestyle{main}{
 \fancyhf{}
 \fancyhead[EL,OR]{\thepage}
 \fancyhead[OC]{\nouppercase{\fangsong\rightmark}}
 \fancyhead[EC]{\nouppercase{\fangsong\leftmark}}
+}
 %===================================================================
 
 
