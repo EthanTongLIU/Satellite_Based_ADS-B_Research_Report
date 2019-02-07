@@ -31,7 +31,7 @@
 \contentsline {figure}{\numberline {3.1-3}{\ignorespaces 技术验证阶段的单颗卫星\footnotemark }}{37}{figure.3.3}
 \contentsline {figure}{\numberline {3.1-4}{\ignorespaces 未来全球卫星组网方案}}{37}{figure.3.4}
 \contentsline {figure}{\numberline {3.1-5}{\ignorespaces AOS 在世界范围内记录的飞机航迹（2014 年 2 月 11 日）\footnotemark }}{38}{figure.3.5}
-\contentsline {figure}{\numberline {3.1-6}{\ignorespaces 所有接收到的位置信息在天线覆盖区中的分布直方图\footnotemark }}{38}{figure.3.6}
+\contentsline {figure}{\numberline {3.1-6}{\ignorespaces 所有接收到的位置信息在天线覆盖区中的分布足迹\footnotemark }}{38}{figure.3.6}
 \contentsline {figure}{\numberline {3.1-7}{\ignorespaces Proba-V 卫星天线辐射图\footnotemark }}{39}{figure.3.7}
 \contentsline {figure}{\numberline {3.1-8}{\ignorespaces 顶部安装的 L 波段天线的垂直天线辐射图\footnotemark }}{39}{figure.3.8}
 \contentsline {figure}{\numberline {3.2-9}{\ignorespaces GOMX-1（GATOSS）卫星\footnotemark }}{40}{figure.3.9}
@@ -57,5 +57,13 @@
 \contentsline {figure}{\numberline {3.4-29}{\ignorespaces Globalstar 的双工网络全球覆盖范围\footnotemark }}{56}{figure.3.29}
 \contentsline {figure}{\numberline {3.5-30}{\ignorespaces 天拓三号卫星主星吕梁一号\footnotemark }}{58}{figure.3.30}
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {4.1-1}{\ignorespaces AOS 项目中接收到的中国丽江机场附近某架飞机的航迹\footnotemark }}{62}{figure.4.1}
+\contentsline {figure}{\numberline {4.4-2}{\ignorespaces 顶部安装的 L 波段天线的垂直天线辐射图\footnotemark }}{64}{figure.4.2}
+\contentsline {figure}{\numberline {4.4-3}{\ignorespaces Proba-V 卫星天线辐射图\footnotemark }}{65}{figure.4.3}
+\contentsline {figure}{\numberline {4.4-4}{\ignorespaces 所有接收到的位置信息在天线覆盖区中的分布足迹\footnotemark }}{65}{figure.4.4}
+\contentsline {figure}{\numberline {4.4-5}{\ignorespaces 125W 功率下的全球覆盖范围\footnotemark }}{66}{figure.4.5}
+\contentsline {figure}{\numberline {4.4-6}{\ignorespaces 250W 功率下的全球覆盖范围\footnotemark }}{66}{figure.4.6}
+\contentsline {figure}{\numberline {4.4-7}{\ignorespaces 静锥区的影响\footnotemark }}{66}{figure.4.7}
+\contentsline {figure}{\numberline {4.5-8}{\ignorespaces 报文冲突\footnotemark }}{67}{figure.4.8}
 \addvspace {10.0pt}
 \contentsfinish 
